@@ -1,0 +1,47 @@
+.list-item--kpi {
+  height: 100px;
+
+  .kpi-color-bar{
+    width: 5px;
+    height: 100%;
+
+    &.red{
+      background: @red;
+    }
+
+    &.green{
+      background: @green;
+    }
+  }
+
+  .list-item--kpi__title{
+    font-size: 1rem;
+    font-family: @font_cn;
+  }
+
+  .list-item__value{
+    font-size: 2rem;
+  }
+
+  .list-item--kpi__right{
+    background: none;
+    padding-bottom: 0;
+
+
+    .kpi-category{
+      color: @dark;
+      margin-right: 25px;
+    }
+
+    .kpi-compare{
+      &.red{
+        color: @red;
+      }
+
+      &.green{
+        color: @green;
+      }
+    }
+  }
+
+}

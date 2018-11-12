@@ -1,0 +1,22 @@
+.kpi-category-select{
+  display: flex;
+  flex-direction: row-reverse;
+
+  .kpi-category-btn{
+
+    .button{
+      font-size: 1em;
+    }
+
+    &:not(.active) .button{
+      color: @light;
+    }
+  }
+
+  .kpi-category-bar{
+    width: 1px;
+    height: 20px;
+    margin-top: 10px;
+    background: @light;
+  }
+}
