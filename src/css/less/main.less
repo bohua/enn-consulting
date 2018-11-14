@@ -10,12 +10,21 @@
     width: 50%;
     background: @blue;
 
+    &.filter-btn.active{
+      background: @bluer;
+    }
+
     &:not(:last-child) {
       border-right: 1px solid @lighter;
     }
 
     .button {
       color: @lighter;
+
+      .filter-btn-text {
+        margin: 0 10px;
+        font-family: @font_cn;
+      }
     }
   }
 }
@@ -23,26 +32,26 @@
 .toolbar {
   background: @blue !important;
 
-  .toolbar__title{
-    color: @lighter!important;
+  .toolbar__title {
+    color: @lighter !important;
   }
 
-  .menu-btn{
-    color: @lighter!important;
+  .menu-btn {
+    color: @lighter !important;
   }
 
-  .choose-month{
+  .choose-month {
     padding-top: 6px;
     padding-right: 6px;
 
-    .select-input{
-      color: @lighter!important;
+    .select-input {
+      color: @lighter !important;
       background: @blue;
       font-size: 1em;
     }
   }
 
-  .choose-month-caret{
+  .choose-month-caret {
     position: relative;
     left: -26px;
     top: -6px;
@@ -55,110 +64,148 @@
   background: @lighter !important;
 }
 
-.back-button__icon{
-  fill: @lighter!important;
+.back-button__icon {
+  fill: @lighter !important;
 }
 
-.list-header{
+.list-header {
   font-family: @font_cn;
-  font-size: 1rem!important;
-  background: @dark!important;
-  color: @lighter!important;
+  font-size: 1rem !important;
+  background: @dark !important;
+  color: @lighter !important;
 }
 
-.chart-wrapper{
+.chart-wrapper {
   padding: 0 20px;
 
-  .chart-body{
+  .chart-body {
     width: 100%;
     display: flex;
 
-    .chart-body-left{
+    .chart-body-left {
       width: 80%;
     }
 
-    .chart-body-right{
+    .chart-body-right {
       width: 20%;
       padding: 30% 0;
       text-align: center;
 
-      .button{
+      .button {
         margin-bottom: 10px;
       }
     }
   }
 }
 
-#QV01{
+#QV01 {
   height: 200px;
 }
 
-#QV02{
+#QV02 {
   height: 300px;
 }
 
-#QV03{
+#QV03 {
   height: 300px;
 }
 
-#QV04{
+#QV04 {
   height: 400px;
 
-  .qv-object{
+  .qv-object {
     border: none;
   }
-  .qv-selection-toolbar{
+  .qv-selection-toolbar {
     display: none;
   }
 }
 
-#QV05{
+#QV05 {
   width: 40%;
   height: 165px;
 }
 
-#QV06{
+#QV06 {
   width: 60%;
   height: 165px;
 }
 
-#QV07{
+#QV07 {
   width: 40%;
   height: 125px;
 }
 
-#QV08{
+#QV08 {
   width: 60%;
   height: 125px;
 }
 
-.segment-wrapper{
+#QV99 {
+  height: 100%;
+}
+
+.segment-wrapper {
   padding: 10px 20px;
   display: flex;
 
-  #segment-1{
+  #segment-1 {
     width: 100%;
 
-    .button{
+    .button {
       font-family: @font_cn;
     }
   }
 
-  #segment-2{
-    width:70%;
+  #segment-2 {
+    width: 70%;
 
-    .button{
+    .button {
       font-family: @font_cn;
     }
   }
 
-  #segment-3{
+  #segment-3 {
     width: 20%;
     margin-left: 10%;
   }
 }
 
-#detailKpi{
+#detailKpi {
   margin-bottom: 15px;
   background: none;
+}
+
+.enn-back-button{
+  color: @lighter;
+  background: none!important;
+
+  ons-icon{
+    font-size: 2.5rem;
+  }
+}
+
+.menu-list{
+  .current-page{
+    background: @light;
+    font-family: @font_cn;
+  }
+}
+
+.load-mask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding-left: calc((100% - 150px)/2);
+  padding-top: calc((100% - 150px));
+
+  background: @lighter;
+
+  ons-progress-circular{
+    width: 150px;
+    height: 150px;
+  }
 }

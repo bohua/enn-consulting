@@ -1,13 +1,13 @@
-define([], function(){
+define([], function () {
     var objMap = {
         //KPIs
         "开放机会KPI": "UtxwSV",
         "盈率KPI": "qNxx",
 
         //Charts
-        "商机LINECHART": "EjvePwx",
+        "商机LINECHART": "RqmvUKt",
         "盈率BARCHART": "pedJW",
-        "行业分类机会前10PIECHART":"MnGpevq",
+        "行业分类机会前10PIECHART": "MnGpevq",
         "工商户TOP10商机CHART": "jChpUsz",
         "民用户TOP10商机CHART": "ksNkWy",
         "工商户TOP10商机TABLE": "jTWXJ",
@@ -23,11 +23,14 @@ define([], function(){
 
         //Variables
         "商机维度变量": "vDimView",
-        "行业分类机会签10维度变量": "vPieDimSelector"
+        "行业分类机会签10维度变量": "vPieDimSelector",
+
+        //Filter
+        "筛选器": "kyRp"
     };
 
-    return{
-        "getObjByName": function(name){
+    return {
+        "getObjByName": function (name) {
             return objMap[name];
         }
     }

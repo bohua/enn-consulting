@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------
 # Package Name
 # -------------------------------------------------------------------------------
-packageName: qlik-consulting               # defaults to "name" in package.json
+packageName: enn-consulting               # defaults to "name" in package.json
 pkg:
   version: 0.1
 
