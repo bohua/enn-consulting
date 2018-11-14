@@ -98,8 +98,6 @@ define(["js/qlik", "jquery", "./qlik-helper"], function (qlik, $, helper) {
                 helper.getChart("客户数据", "QV08");
 
                 helper.getFieldPossible("CustomerStage").then(function (hits) {
-                    //console.log(hits);
-
                     hits.forEach(function (hit) {
                         $("." + hit.qText).attr("icon", "md-check-circle");
                     })

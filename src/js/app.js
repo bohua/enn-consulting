@@ -1,8 +1,4 @@
 /*
- * Basic responsive mashup template
- * @owner Enter you name here (xxx)
- */
-/*
  *    Fill in host and port for Qlik engine
  */
 var prefix = window.location.pathname.substr(0, window.location.pathname.toLowerCase().lastIndexOf("/extensions") + 1);
