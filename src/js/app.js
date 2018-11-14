@@ -184,15 +184,15 @@ require([
 
     window.fn.backToKpi = function () {
         var DescriptionField = app.field('description');
-        DescriptionField.clear().then(function () {
 
-            document.querySelector('#myNavigator').popPage();
-            window.fn.currentPage = "page2";
+        document.querySelector('#myNavigator').popPage();
+        window.fn.currentPage = "page2";
 
-            setTimeout(function () {
-                window.fn.renderPage2();
+        setTimeout(function () {
+            DescriptionField.clear().then(function () {
+                //window.fn.renderPage2();
             });
-        });
+        }, 300);
 
 
     };
