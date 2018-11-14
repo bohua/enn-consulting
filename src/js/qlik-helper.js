@@ -54,6 +54,9 @@ define(["js/qlik", "jquery", "./object-map"], function (qlik, $, objMap) {
 
                     if(id){
                         vis.show(id);
+                    }else{
+                        $("#cachePool").append("<div id='" + objId + "'></div>")
+                        vis.show(objId);
                     }
 
                     return Promise.resolve(vis);
