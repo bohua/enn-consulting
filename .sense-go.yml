@@ -28,7 +28,7 @@ deployment:
     enabled: true
     pathFetching: false              # By default the path will be automatically fetched.
 
-    localExtensionsBaseDir: "/Users/bohua/Documents/Qlik/Sense/Extensions"        # defaults to the local extension directory of Qlik Sense,
+    localExtensionsBaseDir: "/Users/fanta/Documents/Qlik/Sense/Extensions"        # defaults to the local extension directory of Qlik Sense,
     # if pathFetching is enabled, this path will be determined automatically
 
     extensionDirOverride:           # Define the extensionDir if you want to deploy to another directory than defined in packageName
